@@ -1,0 +1,952 @@
+/* This file have not any work i kept for only when we need for this old css code then we can retrive it. */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    background-color: aqua;
+    border-radius: 5px;
+    
+}
+
+.logo {
+    width: 100px;
+    margin: 10px;
+}
+
+.nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Center align text within the element */
+        }
+
+.nav-items > ul {
+    display: flex;
+    margin-right: 5px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav-items > ul > li > a {
+    text-decoration: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.res-card {
+    width: 200px;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.res-card:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.search {
+    padding: 10px;
+}
+
+.res-logo {
+    width: 100%;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter > button {
+    border-radius: 5px;
+}
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(34, 184, 62);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(212, 7, 7);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ff26;
+}
+
+.body {
+    margin-top: 5px;
+}
+
+/* loader.css */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .spinner {
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Optional: Loader text */
+  .loader-text {
+    margin-top: 16px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+
+/* Shimmer */
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card {
+    width: 180px;
+    height: 350px;
+    margin: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* yha se chatgpt ka nhi hai */
+.login {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mind-card {
+    border-radius: 50%;
+}
+
+
+/* About.css */
+.about-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-founder, .founder-list {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.founders, .team {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+ 
+
+.founder-list, .team-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.founder, .team-member {
+  text-align: center;
+  margin: 10px;
+}
+
+.founder img, .team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.founder img:hover, .team-member img:hover {
+  transform: scale(1.1);
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+
+
+  
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contact-form-button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form-button:hover {
+    background-color: #ff4500;
+  }  
+
+  /* Error.js */
+  .error-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .error-content {
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .error-title {
+    font-size: 100px;
+    margin: 0;
+    color: #ff6347;
+  }
+  
+  .error-subtitle {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .error-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .error-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .error-button:hover {
+    background-color: #ff4500;
+  }
+
+  /* src/Footer.css */
+
+.footer {
+  background-color: #00000085;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+ font-style: oblique;
+ font-size: large;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px 0;
+}
+
+.footer-section h2, .footer-section h3 {
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6f61;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff6f61;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* help&support */
+/* HelpSupport.css */
+.container {
+  border: 2px solid black;
+  
+  max-width: 600px;
+  margin: 5px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.support-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3498db;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.option-text {
+  font-size: 18px;
+}
+
+.button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+
+/* RestaurentMenu.js */
+h1 {
+  margin-bottom: 20px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid black;
+}
+
+.menu {
+  border: 1px solid #000;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  margin: 5px;
+}
+/* about learning time */
+.user {
+  border: 1px solid black;
+}
+
+.user-card {
+  border: 1px solid black;
+  margin:5px 0px 5px 0px;
+}
+
+/* General container for the menu */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main card style */
+.menu-card {
+  width: 80%;
+  max-width: 600px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Header style */
+.menu-card h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* List of items */
+.menu-card ul {
+  list-style: none;
+  padding-left: 120px;
+}
+
+/* Individual menu items */
+.menu-card li.menu {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card li.menu:last-child {
+  margin-bottom: 0;
+}
+
+/* Item name */
+.menu-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 10px;
+  
+}
+
+/* Price and rating */
+.menu-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Price */
+.menu-card p:first-of-type {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Rating */
+.menu-card p:nth-of-type(2) {
+  color: #ff9900;
+}
+
+/* Description */
+.menu-card p:last-of-type {
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* RestaurentCard .js */
+/* Container for the cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards */
+}
+
+/* Individual card styles */
+.res-card {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure equal spacing */
+  width: 230px; /* Fixed width for each card */
+  padding: 5px;
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+/* Image styles */
+.res-logo {
+  width: 100%;
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Ensure image covers the area */
+  border-radius: 5px;
+}
+
+/* Header and paragraph styles */
+.res-card h4 {
+  margin: 16px 0 8px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.res-card p {
+  margin: 4px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+/* Hover effect */
+.res-card:hover {
+  transform: translateY(-5px);
+}
+
+/* career */
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+} */
+
+.header-car {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.job-listings {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.job-card {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+  margin-top: 0;
+}
+
+.apply-btn {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #e5533a;
+}
+
+/* searchbox & toprated button css */
+
+/* Styles for the search box */
+.search-box {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-box:focus {
+  border-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Styles for the buttons */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:active {
+  background-color: #1e7e34;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the "Top Rated Restaurants" button */
+.filter-btn {
+  background-color: #007bff;
+}
+
+.filter-btn:hover {
+  background-color: #0069d9;
+}
+
+.filter-btn:active {
+  background-color: #0056b3;
+}
+
+
+/* partner */
+.partner-with-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.partner-with-us h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.partner-with-us p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.restaurant-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+}
+
+.restaurant-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.restaurant-item h2 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+/* contact */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submit-btn {
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #ff4500;
+}
+
+/* About */
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.team-section {
+  margin: 50px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.team-member p {
+  color: #777;
+}
+
+.mission-section {
+  margin-top: 80px;
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  color: #ff6347;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+
+/* ye index.html ka code hai */
+/*  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Food-Order</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Akshay is here!</h1>
+    </div>
+
+     <script 
+    crossorigin
+     src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script 
+    crossorigin
+     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html> */
